@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./js/script.js" defer></script>
+    <title>Home</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <a href="./index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="30">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <img src="./img/logo-removebg-preview.png" class="logo-rounded" />
+        </a>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+                <ul class="nav nav-pills justify-content-center col-9">
+                    <li class="nav-item"><a class="nav-link" href="./noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./equipe.html">Equipe</a></li>
+                </ul>
+                <form class="d-flex col-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Digite aqui.." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center text-center">
+        <h1 class="m-3 mb-4 fw-light" style="border-bottom: dashed 1px #3586d1; color: #3586d1">Sejam bem vindos ao site
+            de notícias da
+            Spectator News!</h1>
+    </div>
+    <section class="p-0 container">
+        <!-- Definição das tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="olimpiadas-tab" data-bs-toggle="tab" data-bs-target="#olimpiadas"
+                    type="button" role="tab" aria-controls="olimpiadas" aria-selected="true">Olimpíadas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button"
+                    role="tab" aria-controls="tech" aria-selected="false">Ciências & Tecnologia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="vagas-tab" data-bs-toggle="tab" data-bs-target="#vagas" type="button"
+                    role="tab" aria-controls="vagas" aria-selected="false">Vagas</button>
+            </li>
+        </ul>
+        <!-- Definição dos conteúdos das tabs -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="olimpiadas" role="tabpanel" aria-labelledby="olimpiadas-tab">
+                <div class="card-deck row rowIndex m-0">
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6">
+                        <img class="card-img-top" src="./img/Rebeca Andrade.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Rebeca Andrade é ouro no solo em Paris e se torna a maior medalhista
+                                brasileira dos Jogos Olímpicos</h5>
+                            <p class="card-text">Com a medalha de ouro desta segunda (5), Rebeca soma seis pódios: 2 em
+                                Tóquio,
+                                4 em Paris. <a href="./detalhes.html">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há uma semana.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/voleifeminino.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Vôlei feminino do Brasil chega às semifinais dos Jogos Olímpicos de
+                                Paris com
+                                mais um show de Gabi</h5>
+                            <p class="card-text">Capitã da seleção lidera com palavras, atitude e, principalmente,
+                                talento. É a
+                                maior pontuadora do time até aqui. Só no
+                                jogo contra a República Dominicana, foram 20 pontos. <a
+                                    href="https://g1.globo.com/jornal-nacional/noticia/2024/08/06/volei-feminino-do-brasil-chega-as-semifinais-dos-jogos-olimpicos-de-paris-com-mais-um-show-de-gabi.ghtml">Leia
+                                    mais...</a></p>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 6 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/Isaquias.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Isaquias Queiroz estreia em Paris com autoridade de quem já coleciona
+                                4
+                                medalhas olímpicas</h5>
+                            <p class="card-text">Canoísta competiu na prova de 500m do C2, ao lado de Jack Goodman, e
+                                conquistou
+                                uma vaga na semifinal. <a
+                                    href="https://g1.globo.com/jornal-nacional/noticia/2024/08/06/isaquias-queiroz-estreia-em-paris-com-autoridade-de-quem-ja-coleciona-4-medalhas-olimpicas.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 7 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/Beatriz.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Novata olímpica, Beatriz Souza conquista a primeira medalha de ouro
+                                do Brasil
+                                em Paris.</h5>
+                            <p class="card-text">A brasileira derrubou as outras três medalhistas olímpicas para chegar
+                                no alto
+                                do pódio: ‘Sair grandiosa em cima de todas elas é mágico’, comemora. <a
+                                    href="https://g1.globo.com/jornal-nacional/noticia/2024/08/02/novata-olimpica-beatriz-souza-conquista-a-primeira-medalha-de-ouro-do-brasil-em-paris.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Atualizado há 5 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/professor.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Aparelho em que Rebeca Andrade garantiu medalha de prata nas
+                                Olimpíadas é
+                                criação de brasileiro; conheça</h5>
+                            <p class="card-text">Paranaense Siegfried Gunther Fischer nasceu em Ponta Grossa e é
+                                considerado
+                                pioneiro da Ginástica Artística no Brasil. Antes da invenção, atletas faziam salto em
+                                aparelho
+                                propício a lesões. <a
+                                    href="https://g1.globo.com/pr/campos-gerais-sul/noticia/2024/08/07/aparelho-em-que-rebeca-andrade-garantiu-medalha-de-prata-nas-olimpiadas-e-criacao-de-brasileiro-conheca.ghtml">Leia
+                                    mais...</a>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 4 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/Sueli.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Nervosismo e oração: Mãe de Piu vibra com classificação do filho para
+                                final e
+                                torce por medalha nas Olimpíadas</h5>
+                            <p class="card-text">Sueli Alves Pereira não tirou os olhos da tela durante bateria de
+                                Alison dos
+                                Santos. Atleta chegou na 3ª posição e teve de aguardar outras semifinais para confirmar
+                                a vaga.
+                                <a
+                                    href="https://g1.globo.com/sp/ribeirao-preto-franca/noticia/2024/08/07/nervosismo-e-oracao-mae-de-piu-vibra-com-classificacao-do-filho-para-final-e-torce-por-medalha-nas-olimpiadas.ghtml">Leia
+                                    mais...</a>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Atualizado há 3 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/ana e duda2.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris 2024: Ana Patrícia e Duda estão nas semifinais do vôlei de
+                                praia após
+                                vencer dupla da Letônia em pouco mais de meia hora</h5>
+                            <p class="card-text">Elas estiveram nos Jogos de Tóquio com outras parceiras. Duda foi
+                                eliminada nas
+                                oitavas de final e Ana Patrícia, nas quartas. Agora, juntas, vão disputar uma semifinal
+                                olímpica
+                                pela primeira vez na carreira. <a
+                                    href="https://g1.globo.com/jornal-nacional/noticia/2024/08/07/paris-2024-ana-patricia-e-duda-estao-nas-semifinais-do-volei-de-praia-apos-vencer-dupla-da-letonia-em-pouco-mais-de-meia-hora.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 2 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/alison.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Alison dos Santos faz quarto tempo e é finalista nos 400m com
+                                barreiras em
+                                Paris</h5>
+                            <p class="card-text">Os outros grandes nomes da prova avançaram com tranquilidade: o
+                                norueguês
+                                Karsten Warholm e o americano Rai Benjamin. A disputa por medalhas será na sexta-feira
+                                (9). <a
+                                    href="https://g1.globo.com/jornal-nacional/noticia/2024/08/07/alison-dos-santos-faz-quarto-tempo-e-e-finalista-nos-400m-com-barreiras-em-paris.ghtml">Leia
+                                    mais...</a>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 8 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/seleção feminina.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris 2024: seleção feminina de futebol vence a potência espanhola
+                                por 4 a 2
+                                e vai para final</h5>
+                            <p class="card-text">O Brasil volta a disputar uma final olímpica depois de 16 anos. A
+                                decisão vai
+                                ser contra a seleção dos Estados Unidos, que passou pela Alemanha na semifinal. <a
+                                    href="https://g1.globo.com/jornal-nacional/noticia/2024/08/06/paris-2024-selecao-feminina-de-futebol-vence-a-potencia-espanhola-por-4-a-2-e-vai-para-final.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 9 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/taxa.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">'Taxa olímpica': saiba se atletas têm que pagar imposto sobre
+                                medalhas e
+                                prêmios em dinheiro</h5>
+                            <p class="card-text">Receita Federal divulgou nota explicativa após repercussão do tema nas
+                                redes
+                                sociais. <a
+                                    href="https://g1.globo.com/economia/noticia/2024/08/06/taxa-olimpica-saiba-se-atletas-tem-que-pagar-imposto-sobre-medalhas-e-premios-em-dinheiro.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">Atualizado há 11 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/Augusto.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Augusto Akio é bronze no skate park nos Jogos Olímpicos de Paris</h5>
+                            <p class="card-text">A prata ficou com Tom Schaar, dos Estados Unidos. E o ouro, assim como
+                                nas
+                                Olimpíadas de Tóquio, com o australiano Keegan Palmer. <a
+                                    href="https://g1.globo.com/jornal-nacional/noticia/2024/08/07/augusto-akio-e-bronze-no-skate-park-nos-jogos-olimpicos-de-paris.ghtml">Leia
+                                    mais...</a>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 12 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/surf.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Surfe brasileiro colhe 2 medalhas nos Jogos de Paris</h5>
+                            <p class="card-text">No feminino, a Tatiana Weston-Webb conquistou uma prata inédita. Entre
+                                os
+                                homens, Gabriel Medina ficou com o bronze. <a href=""> Leia mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 13 dias.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+                <div class="card-deck row rowIndex m-0">
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/primeira IA.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Primeira IA capaz de ser aprovada no Enam é lançada no Brasil</h5>
+                            <p class="card-text">No último dia 1º de agosto, a empresa americana Anthropic — uma das
+                                principais
+                                competidoras da OpenAI, criadora do ChatGPT — liberou acesso a seus modelos de linguagem
+                                ao
+                                público brasileiro. <a
+                                    href="https://www.conjur.com.br/2024-ago-08/primeira-ia-capaz-de-ser-aprovada-no-enam-e-lancada-no-brasil/">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 3 semanas.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/lua recém-nascida.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Lua recém-nascida pode ter se formado com múltiplos satélites
+                                naturais</h5>
+                            <p class="card-text">Em um estudo recente, aceito para publicação na Astrophysical Journal,
+                                pesquisadores investigaram por que, na época de seu nascimento, a Lua tinha uma órbita
+                                inclinada
+                                em pelo menos 10 graus. <a
+                                    href=" https://www.tecmundo.com.br/ciencia/282231-caos-primitivo-estudo-revela-reviravolta-formacao-sistema-solar.htm">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 8 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/aniquilação.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Uma aniquilação massiva de matéria/antimatéria detectada no espaço
+                            </h5>
+                            <p class="card-text">Ao estudar os dados do telescópio espacial de raios gama Fermi da NASA,
+                                pesquisadores observaram um pico de energia único após a explosão gama mais luminosa já
+                                vista,
+                                sugerindo a aniquilação de elétrons e pósitrons. <a
+                                    href=" https://www.techno-science.net/pt/atualidades/uma-aniquilacao-massiva-materia-antimateria-detectada-no-espaco-N25374.html#google_vignette">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 9 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/extraterrestre.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Vida extraterrestre: revelações sobre o gelo de Europa </h5>
+                            <p class="card-text">Os cientistas sempre sonharam em descobrir uma forma de vida
+                                extraterrestre. Um
+                                novo estudo sobre Europa, lua congelada de Júpiter, pode estar trazendo a humanidade
+                                mais perto
+                                desse sonho. <a
+                                    href="https://www.techno-science.net/pt/atualidades/vida-extraterrestre-revelacoes-sobre-gelo-europa-N25372.html">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 13 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/superlua.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Agosto trará superlua e chuva de meteoros perseidas</h5>
+                            <p class="card-text">Os entusiastas da observação astronômica terão a chance de testemunhar
+                                dois
+                                fenômenos celestiais impressionantes neste mês de agosto: uma superlua e a chuva de
+                                meteoros
+                                Perseidas. <a
+                                    href="https://diariodosudoeste.com.br/geral/agosto-trara-superlua-e-chuva-de-meteoros-perseidas/ ">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 10 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/solo da lua.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">China faz descoberta revolucionária em amostra de solo da Lua</h5>
+                            <p class="card-text">Recentemente, pesquisadores da Academia Chinesa de Ciências (CAS)
+                                fizeram uma
+                                descoberta significativa: encontraram grafeno natural na superfície da Lua, organizado
+                                em
+                                camadas finas. <a
+                                    href="https://olhardigital.com.br/2024/08/05/ciencia-e-espaco/china-faz-descoberta-revolucionaria-em-amostra-de-solo-da-lua/">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 14 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/hidrogênio.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Produzir hidrogênio a partir da água: nova tecnologia, produção
+                                recorde</h5>
+                            <p class="card-text">Transformar a luz do Sol e a água em energia limpa é o desafio
+                                enfrentado por
+                                pesquisadores da Universidade Estadual do Oregon com seu novo fotocatalisador. <a
+                                    href=": https://www.techno-science.net/pt/atualidades/produzir-hidrogenio-partir-da-agua-nova-tecnologia-producao-recorde-N25370.html#:~:text=Entre%20os%20diferentes%20materiais%20testados,eficientemente%2010%25%20da%20luz%20recebida.">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 6 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/humana.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">As plataformas de encontro revolucionam a reprodução humana e a
+                                evolução</h5>
+                            <p class="card-text">As redes sociais e as plataformas de encontros online estão
+                                transformando a
+                                maneira como escolhemos nossos parceiros? Um novo estudo da Fundação de Pesquisa
+                                Ethophilia
+                                levanta essa questão, revelando que essas ferramentas digitais induzem uma confusão
+                                notável
+                                entre os jovens adultos na hora de fazer escolhas amorosas. <a
+                                    href="https://www.techno-science.net/pt/atualidades/as-plataformas-encontro-revolucionam-reproducao-humana-evolucao-N25373.html#:~:text=As%20redes%20sociais%20e%20as,hora%20de%20fazer%20escolhas%20amorosas">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 5 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/antibiótico.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Este novo antibiótico torna a resistência bacteriana quase impossível
+                            </h5>
+                            <p class="card-text">A Universidade de Illinois em Chicago desenvolveu macrolonas,
+                                antibióticos que
+                                perturbam dois mecanismos celulares nas bactérias. <a
+                                    href="https://www.techno-science.net/pt/atualidades/este-novo-antibiotico-torna-resistencia-bacteriana-quase-impossivel-N25369.html">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 3 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/desastrónomos.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Desastrónomos revelam a mosaico de 126 mundos estranhos</h5>
+                            <p class="card-text">Uma mosaico celestial composto por 126 mundos exóticos foi revelado por
+                                uma
+                                colaboração entre o satélite TESS da NASA e o observatório Keck no Havaí. <a
+                                    href="https://www.techno-science.net/pt/atualidades/desastronomos-revelam-mosaico-126-mundos-estranhos-N25362.html#:~:text=Uma%20mosaico%20celestial%20composto%20por,esses%20mundos%20ao%20que%20habitamos.">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 8 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/chat.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">O riso, característica do ser humano? ChatGPT foi declarado mais
+                                engraçado
+                                que os humanos</h5>
+                            <p class="card-text">O riso, esse comportamento sutil da humanidade, pode ser dominado por
+                                inteligências artificiais. <a
+                                    href="https://www.techno-science.net/pt/atualidades/riso-caracteristica-do-ser-humano-chatgpt-foi-declarado-engracado-os-humanos-N25368.html#google_vignette">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 11 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/astronautas.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">'Presos' no espaço, astronautas de cápsula da Boeing podem voltar
+                                somente em
+                                fevereiro de 2025</h5>
+                            <p class="card-text">Butch Wilmore e Suni Williams decolaram dos EUA em 5 de junho e
+                                deveriam
+                                retornar no dia 12, mas volta já foi adiada três vezes. <a
+                                    href=" https://g1.globo.com/ciencia/noticia/2024/08/07/presos-no-espaco-astronautas-de-capsula-da-boeing-podem-voltar-somente-em-fevereiro-de-2025.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há uma semana.</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="vagas" role="tabpanel" aria-labelledby="vagas-tab">
+                <div class="card-deck row rowIndex m-0">
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/cursos.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">ES vai abrir concurso com mais de mil vagas no Iases e salário de até
+                                R$ 7,2
+                                mil</h5>
+                            <p class="card-text">A oferta do concurso será de 850 vagas para agente socioeducativo e 176
+                                para
+                                diversas áreas técnicas, sendo oportunidades de ensino médio e superior. <a
+                                    href="https://g1.globo.com/es/espirito-santo/concursos-e-emprego/noticia/2024/08/07/es-vai-abrir-concurso-com-mais-de-mil-vagas-no-iases-e-salario-de-ate-r-72-mil.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Atualizado há uma semana</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/vagas.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">ES tem mais de 700 vagas abertas em concursos e seleções com salários
+                                de até
+                                R$ 21 mil; veja como se candidatar</h5>
+                            <p class="card-text">Oportunidades são para cargos de níveis médio e superior, para
+                                profissionais do
+                                magistério, saúde, auditoria, trânsito, entre outras áreas. <a
+                                    href="https://www.agazeta.com.br/concursos-e-empregos/empregos/distribuidora-solar-do-es-abre-80-vagas-de-emprego-em-vila-velha-0824">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Atualizado há 8 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/distribuidora solar.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Distribuidora Solar do ES abre 80 vagas de emprego em Vila Velha</h5>
+                            <p class="card-text">Interessados precisam ter nível superior em Administração, Engenharias
+                                ou áreas
+                                afins. Empresa vai realizar um mutirão nesta quarta-feira (7). <a
+                                    href=" https://www.agazeta.com.br/concursos-e-empregos/empregos/distribuidora-solar-do-es-abre-80-vagas-de-emprego-em-vila-velha-0824">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 11 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/vagas de emprego.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">ES tem mais de 4 mil vagas de emprego nesta segunda-feira.</h5>
+                            <p class="card-text">Há postos de trabalho para açougueiro, ajudante de cozinha, ajudante de
+                                obras,
+                                balconista, carpinteiro, emendador de cabos elétricos e telefônicos, fiscal de loja,
+                                entre
+                                outras chances<a
+                                    href="https://www.agazeta.com.br/concursos-e-empregos/empregos/es-tem-mais-de-4-mil-vagas-de-emprego-nesta-segunda-feira-0824">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há uma semana.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/senac.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Mais de 800 vagas gratuitas em cursos técnicos estão abertas para
+                                estudantes
+                                no ES; saiba como se inscrever</h5>
+                            <p class="card-text">Oportunidades são para alunos do ensino médio regular e Educação de
+                                Jovens e
+                                Adultos (EJA) da rede pública, com bolsa auxílio no valor de até R$ 400. <a
+                                    href="https://g1.globo.com/es/espirito-santo/noticia/2024/08/04/mais-de-800-vagas-gratuitas-em-cursos-tecnicos-estao-abertas-para-estudantes-no-es-saiba-como-se-inscrever.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 15 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/cursos tecnicos.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Inscrições abertas para 540 vagas em cursos técnicos de graça para
+                                estudantes; saiba como participar</h5>
+                            <p class="card-text">Serão nove cursos e as aulas serão ministradas em 12 cidades do
+                                Espírito Santo.
+                                Inscrições vão até 21 de junho, na internet. <a
+                                    href="https://g1.globo.com/es/espirito-santo/noticia/2024/06/03/inscricoes-abertas-para-540-vagas-em-cursos-tecnicos-de-graca-para-estudantes-saiba-como-participar.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Atualizado há 2 meses.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/governo.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Governo do ES vai abrir vagas para estágio com bolsa até R$ 1.034
+                            </h5>
+                            <p class="card-text">Projeto de Lei foi aprovado para reajustar valor da bolsa de estágio do
+                                programa Jovens Valores, que abre inscrições na próxima semana. <a
+                                    href="https://tribunaonline.com.br/empregos-e-estagios/governo-do-es-vai-abrir-vagas-para-estagio-com-bolsa-de-ate-r-1034-189656?home=esp%C3%ADrito+santo">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 1 mês.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/concurso unificado.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Concurso unificado: veja como consultar o seu local de prova</h5>
+                            <p class="card-text">O cartão de confirmação de Inscrição estará disponível na Área do
+                                Candidato,
+                                mesma página em que a pessoa fez a inscrição. <a
+                                    href="https://www.folhavitoria.com.br/trabalho/noticia/08/2024/local-prova-concurso-unificado-cnu-confira-agora-o-seu">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 8 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/sine de cachoeiro.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Sine de Cachoeiro oferta 143 vagas de emprego nesta quarta-feira (7)
+                            </h5>
+                            <p class="card-text">As oportunidades de emprego são para diversos cargos e níveis de
+                                escolaridade e
+                                para cidades do Sul do ES. <a
+                                    href="https://aquinoticias.com/2024/08/sine-de-cachoeiro-oferta-143-vagas-de-emprego-nesta-quarta-feira-7">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 9 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/ifes.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Não perca! Ifes está oferecendo 30 vagas para curso em Cachoeiro</h5>
+                            <p class="card-text">Os cursos serão presencias e destinados a pessoas em condição de
+                                vulnerabilidade socioeconômica, de baixa e sem vínculo formal de emprego. <a
+                                    href=" https://aquinoticias.com/2024/08/nao-perca-ifes-esta-oferecendo-30-vagas-para-curso-em-cachoeiro/">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 12 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/instituto.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Quer estagiar no ES? Instituto anuncia 30 vagas no Espírito Santo
+                            </h5>
+                            <p class="card-text">As bolsas para nível técnico e superior variam entre R$ 650,00 e R$
+                                1.600,00. <a
+                                    href="https://g1.globo.com/es/espirito-santo/noticia/2024/08/04/mais-de-800-vagas-gratuitas-em-cursos-tecnicos-estao-abertas-para-estudantes-no-es-saiba-como-se-inscrever.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 14 dias.</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <img class="card-img-top" src="./img/emprego.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Emprego em Curitiba e região: veja vagas disponíveis em agosto</h5>
+                            <p class="card-text">Há oportunidades em empresa de óleo e gás, além de mutirão de emprego
+                                focado
+                                nos jovens. <a
+                                    href="https://g1.globo.com/pr/parana/concursos-e-emprego/noticia/2024/08/06/emprego-em-curitiba-e-regiao-veja-vagas-disponiveis-em-agosto.ghtml">Leia
+                                    mais...</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizado há 3 dias.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="d-flex justify-content-end p-2"><em>12 notícias encontradas...</em></p>
+    </section>
+    <a href="#" class="btnVoltar"></a>
+    <div class="m-3 p-2"></div>
+    <footer class="fixed-bottom p-2">
+        <p class="p-0 m-0">&copy; 2024. Spectator News - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

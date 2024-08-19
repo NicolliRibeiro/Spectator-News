@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="script.js" />
+    <title>Contato</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <a href="./index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="50" height="30">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <img src="./img/logo-removebg-preview.png" class="logo-rounded" />
+        </a>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+                <ul class="nav nav-pills justify-content-center col-12">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./equipe.html">Equipe</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="d-flex justify-content-center text-center">
+            <h1 class="m-3 p-0 fw-light" style="border-bottom: dashed 1px #3586d1; color: #3586d1">Entre em contato
+                conosco</h1>
+        </div>
+        <div class="row m-2 mt-4 lead">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 pe-5">
+                <h2>Trabalhe conosco:</h2>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" class="form-control campo" required
+                            placeholder="Digite seu nome completo aqui:">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" class="form-control campo" required
+                            placeholder="Digite seu e-mail aqui:">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" name="telefone" id="telefone" class="form-control campo" required
+                            placeholder="Digite seu telefone aqui:">
+                    </div>
+                    <div class="form-group">
+                        <label>Tempo de Experiência:</label>
+                        <select id="tempoExperiencia" class="form-control campo">
+                            <option value="" disabled selected>Selecione o tempo de experiência</option>
+                            <!--Impede que o selecione.-->
+                            <option value="0-2">0-2 anos</option>
+                            <option value="2-5">2-5 anos</option>
+                            <option value="acima-5">Acima de 5 anos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formacao">Formação:</label>
+                        <input type="text" name="formacao" id="formacao" class="form-control campo" required
+                            placeholder="Digite sua formação aqui:">
+                    </div>
+                    <div class="form-group">
+                        <label>Área de interesse:</label>
+                        <select id="areaInteresse" class="form-control campo" required>
+                            <option value="" disabled selected>Selecione a área de interesse:</option>
+                            <!--Impede que o selecione.-->
+                            <option value="olimpiadas">Olimpíadas</option>
+                            <option value="ciencias-tecnologia">Ciências & Tecnologia</option>
+                            <option value="vagas">Vagas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="anexo">Anexo</label><br/>
+                        <input type="file" class="form-control-file form-control-sm" id="anexo" required>
+                      </div>
+                    <div class="p-0 mt-2 btn-container">
+                        <button type="submit" class="btn btn-primary">Cadastre-se</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ps-5" style="border-left-style: groove;">
+                <h2>Cadastre-se aqui para receber as notícias em primeira mão:</h2>
+                <br>
+                <form>
+                    <div class="form-group campos">
+                        <label for="nomeCadastro">Nome:</label>
+                        <input type="text" name="nome" id="nomeCadastro" class="form-control campo" required
+                            placeholder="Digite seu nome completo aqui:">
+                    </div>
+                    <div class="form-group campos">
+                        <label for="emailCadastro">E-mail:</label>
+                        <input type="email" name="email" id="emailCadastro" class="form-control campo" required
+                            placeholder="Digite seu e-mail aqui:">
+                    </div>
+                    <div class="p-0 mt-2 btnCadastro">
+                        <button type="submit" class="btn btn-primary">Cadastre-se</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="fixed-bottom p-2">
+        <p class="p-0 m-0">&copy; 2024. Spectator News - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

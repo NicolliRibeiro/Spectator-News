@@ -1,0 +1,169 @@
+body {
+    width: 100%;
+    height: auto !important;
+    font-family: 'Arial', ;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+.logo-rounded {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    color: #000;
+    font-size: large;
+}
+
+.nav-link:hover {
+    background-color: #3586d1;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+.rowIndex>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card {
+    width: 320px;
+    margin: 5px;
+    padding: 0;
+}
+
+.card-img-top {
+    height: 175px;
+}
+
+.card-title,
+.card-text {
+    text-align: justify;
+}
+
+footer {
+    background-color: #2163a1;
+    padding: 10px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Botão de voltar ao topo da página */
+.btnVoltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.btnVoltar::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    transition: margin-top 250ms;
+}
+
+.btnVoltar:hover {
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.btnVoltar:hover::after {
+    margin-top: -8px;
+}
+
+/*CÓDIGO DA PÁGINA DE DETALHES:*/
+.tituloNoticia {
+    font-size: 30px;
+    text-align: center;
+    color: #194e7f;
+    font-family: 'Arial', sans-serif;
+    /* Família de fontes */
+    font-weight: bold;
+    /* Negrito */
+    text-transform: uppercase;
+    /* Maiúsculas */
+}
+
+.conteudoNoticia {
+    background-color: #ffffff;
+    text-align: justify;
+    padding: 40px;
+    margin: 20px auto;
+    /*Afastamento entre os elementos ao redor*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #5f5f5f;
+    /*Adiciona sombra em volta de um elemento.*/
+    max-width: 1200px;
+    /*Tamanho do painel*/
+}
+
+.textoNoticia {
+    margin-top: 20px;
+    line-height: 1.6;
+    /*Afastamento entre palavras*/
+    color: #555;
+
+}
+
+.imgNoticia {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*Efeito de Sombra*/
+    max-width: 100%;
+}
+
+.infoNoticia {
+    color: #777;
+}
+
+destaqueTexto {
+    background-color: #d8e4ed;
+    /* a cor do destaque */
+    color: black;
+}
+
+/* CÓDIGO DA PÁGINA DE EQUIPE */
+.fotoEquipe {
+    height: 185px;
+    width: 100%;
+}
+
+/* Sumir imagem do integrante quando a tela fica com um tamanho abaixo de 767px */
+@media only screen and (max-width: 767px) {
+    .fotoEquipe {
+        display: none;
+    }
+}
+
+/*CÓDIGO DA PÁGINA DE CONTATO*/
+.campo {
+    border: 1px solid #ccc;
+    /* Adiciona uma borda ao campo de entrada */
+}
+
+
+.btnCadastro {
+    position: relative;
+    /* Posicionamento absoluto do botão */
+    padding-bottom: 80px;
+    /* Garante que o conteúdo não sobreponha o botão */
+}
+
+/*
+HEXADECIMAL DAS CORES:
+1.(#194e7f);
+2.(#c4c6c8);
+3.(#43b1db);
+4.(#76aacd);
+5.(#ebedef);
+6.(#d8e4ed)*/
